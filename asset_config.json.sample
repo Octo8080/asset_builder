@@ -1,0 +1,8 @@
+{
+  "files":[
+    {
+      "importPath": "./sample.txt",
+      "calledName": "sample-text"
+    }
+  ]  
+}
