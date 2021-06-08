@@ -25,7 +25,7 @@ deno run --allow-read https://raw.githubusercontent.com/Octo8080/assets-builder/
 
 # Configuration
 
-The configuration file is described in json.
+The configuration file is described in json.  
 Write as follows.
 
 ```json
@@ -41,7 +41,9 @@ Write as follows.
 
 # Example of using bundled files
 
-```ts example/example.ts
+The file created by asset_builder is used as follows.
+
+```ts 
 import assets from './assets.ts'
 
 for (const [key, value] of Object.entries(assets.files)) {
