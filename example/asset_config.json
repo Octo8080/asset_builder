@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "importPath": "./example/test.txt",
+      "calledName": "test-text"
+    },
+    {
+      "importPath": "./example/test.txt",
+      "calledName": "test-text2"
+    }
+  ]
+}
