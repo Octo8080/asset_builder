@@ -4,7 +4,7 @@ Asset files (eg, text, image) bundle tool for Deno.
 # Install 
 
 ```sh
-deno install --allow-read https://raw.githubusercontent.com/Octo8080/assets-builder/main/asset_builder.ts
+deno install --allow-read https://deno.land/x/asset_builder@1.0.0/asset_builder.ts
 
 # Import config file from default ./assets_config.json.
 asset_builder >> assets.ts
@@ -17,10 +17,10 @@ asset_builder --inport-file my_assets_config.json >> assets.ts
 
 ```sh
 # Import config file from default ./assets_config.json.
-deno run --allow-read https://raw.githubusercontent.com/Octo8080/assets-builder/main/asset_builder.ts >> assets.ts
+deno run --allow-read https://deno.land/x/asset_builder@1.0.0/asset_builder.ts >> assets.ts
 
 # Set Import config file.
-deno run --allow-read https://raw.githubusercontent.com/Octo8080/assets-builder/main/asset_builder.ts --inport-file my_assets_config.json  >> assets.ts
+deno run --allow-read https://deno.land/x/asset_builder@1.0.0/asset_builder.ts --inport-file my_assets_config.json  >> assets.ts
 ```
 
 # Configuration
