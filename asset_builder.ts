@@ -3,9 +3,9 @@ import { parse, encode, ImportTargetFile, ImportedFile, exportBundledObject } fr
 const parsedArgs = parse(Deno.args);
 
 const importFileName =
-  typeof parsedArgs["inport-file"] === "string"
-    ? parsedArgs["inport-file"]
-    : "asset_config.json";
+  typeof parsedArgs["import-file"] === "string"
+    ? parsedArgs["import-file"]
+    : "assets_config.json";
 
 let bundleList = "";
 
