@@ -26,7 +26,7 @@ deno run --allow-read https://raw.githubusercontent.com/Octo8080/assets-builder/
 # Configuration
 
 The configuration file is described in json.
-Do the following:
+Write as follows.
 
 ```json
 {
