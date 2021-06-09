@@ -10,7 +10,7 @@ deno install --allow-read https://deno.land/x/asset_builder/asset_builder.ts
 asset_builder >> assets.ts
 
 # Set Import config file.
-asset_builder --inport-file my_assets_config.json >> assets.ts
+asset_builder --import-file my_assets_config.json >> assets.ts
 ```
 
 # Usage 
@@ -20,7 +20,7 @@ asset_builder --inport-file my_assets_config.json >> assets.ts
 deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts >> assets.ts
 
 # Set Import config file.
-deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts --inport-file my_assets_config.json  >> assets.ts
+deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts --import-file my_assets_config.json  >> assets.ts
 ```
 
 # Configuration
