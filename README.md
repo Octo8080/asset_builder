@@ -1,4 +1,4 @@
-# assets-builder
+# asset_builder
 Asset files (eg, text, image) bundle tool for Deno.
 
 # Install 
@@ -6,21 +6,21 @@ Asset files (eg, text, image) bundle tool for Deno.
 ```sh
 deno install --allow-read https://deno.land/x/asset_builder/asset_builder.ts
 
-# Import config file from default ./assets_config.json.
-asset_builder >> assets.ts
+# Import config file from default ./asset_config.json.
+asset_builder >> asset.ts
 
 # Set Import config file.
-asset_builder --import-file my_assets_config.json >> assets.ts
+asset_builder --import-file my_asset_config.json >> asset.ts
 ```
 
 # Usage 
 
 ```sh
-# Import config file from default ./assets_config.json.
-deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts >> assets.ts
+# Import config file from default ./asset_config.json.
+deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts >> asset.ts
 
 # Set Import config file.
-deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts --import-file my_assets_config.json  >> assets.ts
+deno run --allow-read https://deno.land/x/asset_builder/asset_builder.ts --import-file my_asset_config.json  >> asset.ts
 ```
 
 # Configuration
@@ -44,9 +44,9 @@ Write as follows.
 The file created by asset_builder is used as follows.
 
 ```ts 
-import assets from './assets.ts'
+import asset from './asset.ts'
 
-for (const [key, value] of Object.entries(assets.files)) {
+for (const [key, value] of Object.entries(asset.files)) {
   console.log(`key: ${key}, extension: ${value.extension}, content: ${new TextDecoder().decode(value.content) }`);
 }
 // key: test-text, extension: txt, content: Hello World!!
